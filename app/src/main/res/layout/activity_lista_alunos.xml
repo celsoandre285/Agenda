@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -11,6 +11,24 @@
         android:id="@+id/lista_alunos"
         />
 
+    <Button
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text="+"
+        android:textSize="35sp"
+        android:elevation="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/fundo"
+        android:textColor="#fff"
+        android:stateListAnimator="@null"
+        android:id="@+id/novo_aluno"
+        />
 
 
-</LinearLayout>
+
+
+
+</RelativeLayout>

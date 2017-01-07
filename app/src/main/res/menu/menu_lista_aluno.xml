@@ -9,7 +9,14 @@
         android:icon="@drawable/ic_enviar"
         app:showAsAction="always"
         >
+    </item>
 
+    <item
+        android:id="@+id/menu_baixar_provas"
+        android:title="baixar_notas"
+        android:icon="@drawable/ic_receber"
+        app:showAsAction="always"
+        >
     </item>
 
 

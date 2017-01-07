@@ -48,6 +48,7 @@ public class ListaAlunoActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> lista, View item, int position, long l) {
                 Aluno aluno = (Aluno) list_item.getItemAtPosition(position);
+                // Aluno aluno = (Aluno) lista.getItemAtPosition(position);
                 itFormulario = new Intent(ListaAlunoActivity.this, FormularioActivity.class);
                 itFormulario.putExtra("aluno", aluno);
                 //Toast.makeText(ListaAlunoActivity.this, aluno.getNome(), Toast.LENGTH_SHORT).show();
@@ -88,6 +89,9 @@ public class ListaAlunoActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.menu_enviar_notas:
                 new EnviarAlunosTask(this).execute();
+                break;
+            case R.id.menu_baixar_provas:
+                startActivity(new Intent(ListaAlunoActivity.this, ProvasActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

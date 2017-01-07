@@ -13,7 +13,15 @@ public class Aluno implements Serializable{
     private String site;
     private String Telefone;
     private Double nota;
+    private String CaminhoFoto;
 
+    public String getCaminhoFoto() {
+        return CaminhoFoto;
+    }
+
+    public void setCaminhoFoto(String caminhoFoto) {
+        CaminhoFoto = caminhoFoto;
+    }
 
     public Long getId_aluno() {
         return id_aluno;
